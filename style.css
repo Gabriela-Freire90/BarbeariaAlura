@@ -1,0 +1,147 @@
+/*id: força 100       ex:p < form p < .teste < p.teste < #teste
+  class: força 10
+  tag: força 1
+  estilo inline: no html (mais forte que todos)*/
+
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+    /*20 pra cima e pra baixo, o dir e esq*/
+}
+
+.caixa {
+    position: relative;
+    /*leva pra frente*/
+    width: 940px;
+    margin: 0 auto;
+    /*centralizar*/
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+    /*(top, direita, baixo, esquerda)*/
+
+}
+
+nav a {
+    text-transform: uppercase;
+    /* tranforma em maisculo */
+    color: black;
+    font-weight: bold;
+    /* fonte mais grossa, peso da fonte em negrito*/
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78c19;
+    text-decoration: underline;
+    /* aplica sublinhado */
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    /*centralizar*/
+    padding: 50px 0;
+    /*50 pra cima e pra baixo e 0 para os lados*/
+}
+
+.produtos li {
+    display: inline-block;
+    /*tamanho do conteudo regulavel*/
+    text-align: center;
+    width: 30%;
+    /*dividir item*/
+    vertical-align: top;
+    /*orientar pela linha de cima*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+
+    box-sizing: border-box;
+    /*os 30% serao mantidos e os espaçamentos estaram dentro deste valor*/
+    /*  border-color: black;
+    border-width: 2px;    tamanho borda
+    border-style: solid;  configuração e tipo de borda
+    border-radius: 10px, 20px, 30px, 40px ;  superior esq, dir, inferior dir, esq  */
+
+    border: 2px solid black;
+    /*tamanho, tipo e cor*/
+    border-radius: 10px;
+
+}
+
+.produtos li:hover {
+    /*quando o o mouse esta sobre ele*/
+    border-color: #C78c19;
+
+}
+
+.produtos li:active {
+    /*quando o produto esta ativo, clicado*/
+    border-color: #088c19;
+}
+
+.produtos li:hover h2 {
+    /*altera o h2*/
+    border-color: #C78c19;
+    font-size: 34px;
+
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+footer {
+    text-align: center;
+    background: url(bg.jpg); /*coloca imagem como fundo*/
+    padding: 40px 0;
+}
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padrao{ /*aplicado a mesma coisa p o input e para o text area*/
+    display: block;
+    margin: 0 0 10px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox {
+    margin: 20px 0;
+}
